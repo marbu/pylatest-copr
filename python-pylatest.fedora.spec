@@ -2,7 +2,7 @@
 %global pypi_name pylatest
 
 Name:           python-%{pypi_name}
-Version:        0.1.1
+Version:        0.1.2
 Release:        1%{?dist}
 Summary:        Testcase description management tools
 
@@ -31,7 +31,7 @@ Summary:        %{summary}
  
 Requires:       python-docutils
 Requires:       python-lxml
-Requires:       python-sphinx
+Requires:       python-sphinx >= 1.6.0
 Requires:       python-setuptools
 %description -n python2-%{pypi_name}
 Pylatest project consists of set of Docutils/Sphinx extensions and related
@@ -47,7 +47,7 @@ Summary:        %{summary}
  
 Requires:       python3-docutils
 Requires:       python3-lxml
-Requires:       python3-sphinx
+Requires:       python3-sphinx >= 1.6.0
 Requires:       python3-setuptools
 %description -n python3-%{pypi_name}
 Pylatest project consists of set of Docutils/Sphinx extensions and related
@@ -149,5 +149,8 @@ ln -s %{_bindir}/pylatest-rst2htmlplain-%{python2_version} %{buildroot}/%{_bindi
 %{python3_sitelib}/%{pypi_name}-%{version}-py?.?.egg-info
 
 %changelog
+* Mon Apr 16 2018 Martin Bukatovic <martin.bukatovic@gmail.com> - 0.1.2-1
+- Build for upstream version 0.1.2
+
 * Mon Apr 16 2018 Martin Bukatovic <martin.bukatovic@gmail.com> - 0.1.1-1
 - Initial package.
