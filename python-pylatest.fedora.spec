@@ -8,7 +8,7 @@ Summary:        Testcase description management tools
 
 License:        GPLv3
 URL:            http://gitlab.com/mbukatov/pylatest/
-Source0:        %{pypi_name}-%{version}.tar.gz
+Source0:        https://files.pythonhosted.org/packages/source/p/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
 BuildArch:      noarch
  
 BuildRequires:  python2-devel
