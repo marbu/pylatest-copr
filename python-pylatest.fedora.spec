@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.1.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Testcase description management tools
 
 License:        GPLv3
@@ -19,9 +19,9 @@ BuildRequires:  python3-setuptools
 
 %description
 Pylatest project consists of set of Docutils/Sphinx extensions and related
-tools which allows you to:* Write a description of a test case using
-reStructuredText syntax. * Maintain test case description as Sphinx project. *
-Include this description into a python source code directly, where it can be
+tools which allows you to: Write a description of a test case using
+reStructuredText syntax, maintain test case description as Sphinx project and
+include this description into a python source code directly, where it can be
 split into individual sections or actions to be performed, so that the
 description and test...
 
@@ -33,11 +33,12 @@ Requires:       python-docutils
 Requires:       python-lxml
 Requires:       python-sphinx >= 1.6.0
 Requires:       python-setuptools
+Requires:       man-db
 %description -n python2-%{pypi_name}
 Pylatest project consists of set of Docutils/Sphinx extensions and related
-tools which allows you to:* Write a description of a test case using
-reStructuredText syntax. * Maintain test case description as Sphinx project. *
-Include this description into a python source code directly, where it can be
+tools which allows you to: Write a description of a test case using
+reStructuredText syntax, maintain test case description as Sphinx project and
+include this description into a python source code directly, where it can be
 split into individual sections or actions to be performed, so that the
 description and test...
 
@@ -49,11 +50,12 @@ Requires:       python3-docutils
 Requires:       python3-lxml
 Requires:       python3-sphinx >= 1.6.0
 Requires:       python3-setuptools
+Requires:       man-db
 %description -n python3-%{pypi_name}
 Pylatest project consists of set of Docutils/Sphinx extensions and related
-tools which allows you to:* Write a description of a test case using
-reStructuredText syntax. * Maintain test case description as Sphinx project. *
-Include this description into a python source code directly, where it can be
+tools which allows you to: Write a description of a test case using
+reStructuredText syntax, maintain test case description as Sphinx project and
+include this description into a python source code directly, where it can be
 split into individual sections or actions to be performed, so that the
 description and test...
 
@@ -149,6 +151,10 @@ ln -s %{_bindir}/pylatest-rst2htmlplain-%{python2_version} %{buildroot}/%{_bindi
 %{python3_sitelib}/%{pypi_name}-%{version}-py?.?.egg-info
 
 %changelog
+* Wed Apr 18 2018 Martin Bukatovic <martin.bukatovic@gmail.com> - 0.1.2-2
+- Add man as a dependency
+- Tweak package description
+
 * Mon Apr 16 2018 Martin Bukatovic <martin.bukatovic@gmail.com> - 0.1.2-1
 - Build for upstream version 0.1.2
 
