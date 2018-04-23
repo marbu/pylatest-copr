@@ -2,3 +2,5 @@
 *~
 *.rpm
 *.srpm
+*.tar.gz
+*.html
