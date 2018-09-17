@@ -33,6 +33,7 @@ Requires:       python3dist(docutils)
 Requires:       python3dist(lxml)
 Requires:       python3dist(setuptools)
 Requires:       python3dist(sphinx) >= 1.6.0
+Requires:       man-db
 %description -n python3-%{pypi_name}
 Pylatest project consists of set of Docutils/Sphinx extensions and related
 tools which allows you to:* Write a description of a test case using
