@@ -86,6 +86,18 @@ For another full example of this approach, see `Automate RPM Builds from Git
 Sources using COPR`_.
 
 
+License
+=======
+
+Distributed under the terms of the `GNU GPL v3.0`_ license,
+pylatest-copr is free and open source software.
+
+Note that the license is selected to match license of Pylatest_ project, which
+follows a general rule that specfile is licensed in the same way as source code
+itself.
+
+
+.. _`GNU GPL v3.0`: http://www.gnu.org/licenses/gpl-3.0.txt
 .. _`Pylatest`: https://gitlab.com/mbukatov/pylatest/
 .. _`pyp2rpm`: https://github.com/fedora-python/pyp2rpm
 .. _`sdist tarball`: https://packaging.python.org/glossary/?highlight=sdist#term-source-distribution-or-sdist
