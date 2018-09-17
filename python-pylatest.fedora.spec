@@ -8,7 +8,8 @@ Summary:        Testcase description management tools
 
 License:        GPLv3
 URL:            http://gitlab.com/mbukatov/pylatest/
-Source0:        https://files.pythonhosted.org/packages/source/p/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+# https://fedoraproject.org/wiki/Packaging:Python#Source_Files_from_PyPI
+Source0:        %pypi_source
 BuildArch:      noarch
  
 BuildRequires:  python3-devel
@@ -72,6 +73,7 @@ rm -rf %{pypi_name}.egg-info
 * Mon Sep 17 2018 Martin Bukatovic <martin.bukatovic@gmail.com> - 0.1.3-1
 - Build for upstream version 0.1.3
 - Regenerate specfile using pyp2rpm-3.3.2
+- Use %pypi_source macro as Source0
 
 * Wed Apr 18 2018 Martin Bukatovic <martin.bukatovic@gmail.com> - 0.1.2-2
 - Add man as a dependency
