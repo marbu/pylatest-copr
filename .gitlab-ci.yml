@@ -1,0 +1,8 @@
+stages:
+  - test
+
+rpmlint:
+  image: fedora:latest
+  stage: test
+  script:
+    - rpmlint -v python-pylatest.fedora.spec
